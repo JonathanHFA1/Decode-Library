@@ -1,0 +1,10 @@
+*{
+    font-family: 'Rokkitt', serif;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.register{
+    cursor: pointer;
+}
