@@ -5,7 +5,7 @@
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: $preto;
 }
 
@@ -120,7 +120,6 @@
                 font-size: 14px;
                 line-height: 17px;
                 color: $white;
-                margin-left: 95px;
             }
 
             .register {
@@ -172,9 +171,14 @@
                 align-self: center;
             }
             .contaLogin{
-                @extend .text;
                 border:solid 3px white ;
                 color: white;
+                border-radius: 100px;
+                height: 43px;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                text-decoration: none;
             }
         }
     }

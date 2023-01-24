@@ -3,7 +3,7 @@
   font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   background-color: #252525;
 }
 
@@ -78,7 +78,7 @@
   width: 20px;
   accent-color: #FF4E16;
 }
-.container .container2 .login2Right .text, .containerp .container2 .login2Right .text, .containerp .container2p .login2Right .text, .containerp .container2p .login2Rightp .text, .container .container2 .login2Right .contaLogin, .containerp .container2 .login2Right .contaLogin, .containerp .container2p .login2Right .contaLogin, .containerp .container2p .login2Rightp .contaLogin, .container .container2 .login2Right .register, .containerp .container2 .login2Right .register, .containerp .container2p .login2Right .register, .containerp .container2p .login2Rightp .register {
+.container .container2 .login2Right .text, .containerp .container2 .login2Right .text, .containerp .container2p .login2Right .text, .containerp .container2p .login2Rightp .text, .container .container2 .login2Right .register, .containerp .container2 .login2Right .register, .containerp .container2p .login2Right .register, .containerp .container2p .login2Rightp .register {
   width: 360px;
   height: 46px;
   border-radius: 100px;
@@ -88,7 +88,7 @@
   font-size: 16px;
   line-height: 19px;
 }
-.container .container2 .login2Right .text::placeholder, .containerp .container2 .login2Right .text::placeholder, .containerp .container2p .login2Right .text::placeholder, .containerp .container2p .login2Rightp .text::placeholder, .container .container2 .login2Right .contaLogin::placeholder, .containerp .container2 .login2Right .contaLogin::placeholder, .containerp .container2p .login2Right .contaLogin::placeholder, .containerp .container2p .login2Rightp .contaLogin::placeholder, .container .container2 .login2Right .register::placeholder, .containerp .container2 .login2Right .register::placeholder, .containerp .container2p .login2Right .register::placeholder, .containerp .container2p .login2Rightp .register::placeholder {
+.container .container2 .login2Right .text::placeholder, .containerp .container2 .login2Right .text::placeholder, .containerp .container2p .login2Right .text::placeholder, .containerp .container2p .login2Rightp .text::placeholder, .container .container2 .login2Right .register::placeholder, .containerp .container2 .login2Right .register::placeholder, .containerp .container2p .login2Right .register::placeholder, .containerp .container2p .login2Rightp .register::placeholder {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -104,7 +104,6 @@
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
-  margin-left: 95px;
 }
 .container .container2 .login2Right .register, .containerp .container2 .login2Right .register, .containerp .container2p .login2Right .register, .containerp .container2p .login2Rightp .register {
   background-color: #FF4E16;
@@ -151,6 +150,12 @@
 .container .container2 .login2Right .contaLogin, .containerp .container2 .login2Right .contaLogin, .containerp .container2p .login2Right .contaLogin, .containerp .container2p .login2Rightp .contaLogin {
   border: solid 3px white;
   color: white;
+  border-radius: 100px;
+  height: 43px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
