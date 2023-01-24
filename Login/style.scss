@@ -1,0 +1,19 @@
+@import '../Register/color.scss';
+@import '../register/styleR.scss';
+
+.containerp {
+    @extend .container;
+
+    .container2p {
+        @extend .container2;
+
+        .login1Leftp {
+            @extend .login1Left;
+        }
+
+        .login2Rightp {
+            @extend .login2Right;
+        }
+
+    }
+}
