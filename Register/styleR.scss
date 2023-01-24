@@ -1,0 +1,181 @@
+@import 'color.scss';
+
+* {
+    font-family: 'Rokkitt', serif;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: $preto;
+}
+
+
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+
+    .container2 {
+
+        input {
+            background-color: $white;
+        }
+
+        display: flex;
+        gap: 145px;
+        padding: 153px;
+        top: 243px;
+
+        .login1Left {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 551px;
+            width: 50%;
+
+            p {
+                font-family: 'Rubik';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #E3E3E3;
+            }
+
+            h6 {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                color: #E3E3E3;
+            }
+
+            h1 {
+                font-family: Rokkitt;
+                font-size: 52px;
+                font-weight: 500;
+                line-height: 59px;
+                letter-spacing: 0em;
+                text-align: left;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+
+        .login2Right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; //espacemento entra as coluna/grades
+            width: 50%;
+
+            .newsLetter {
+                align-items: center;
+                display: flex;
+                gap: 8px;
+                color: $white;
+
+                p {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: $gray;
+                }
+
+                input {
+                    height: 20px;
+                    width: 20px;
+                    accent-color: $orange;
+                }
+            }
+
+            .text {
+                width: 360px;
+                height: 46px;
+                border-radius: 100px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+
+
+                &::placeholder {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #AAAAAA;
+                    padding: 24px;
+                }
+            }
+
+            a {
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: $white;
+                margin-left: 95px;
+            }
+
+            .register {
+                @extend .text;
+                background-color: $orange;
+                color: white;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+
+            h2 {
+                font-family: 'Rokkitt';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 45px;
+                color: $white;
+            }
+
+            .socialMedia {
+                display: flex;
+                gap: 18px;
+                color: $white;
+
+                button {
+                    border-radius: 100px;
+                    width: 105px;
+                    height: 43px;
+                    display: inline;
+                    background: white;
+                    cursor: pointer;
+                }
+
+                img {
+                    background-color: white;
+                }
+
+            }
+            hr{
+                border-color:#aaa;
+                box-sizing:border-box;
+                width:70%;  
+                margin-right: 8px;
+                display: flex;
+                align-self: center;
+            }
+            .contaLogin{
+                @extend .text;
+                border:solid 3px white ;
+                color: white;
+            }
+        }
+    }
+}
