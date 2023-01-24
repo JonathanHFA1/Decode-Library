@@ -162,16 +162,18 @@
                 }
 
             }
-            hr{
-                border-color:#aaa;
-                box-sizing:border-box;
-                width:70%;  
+
+            hr {
+                border-color: #aaa;
+                box-sizing: border-box;
+                width: 70%;
                 margin-right: 8px;
                 display: flex;
                 align-self: center;
             }
-            .contaLogin{
-                border:solid 3px white ;
+
+            .contaLogin {
+                border: solid 3px white;
                 color: white;
                 border-radius: 100px;
                 height: 43px;
@@ -179,6 +181,14 @@
                 padding: 10px;
                 cursor: pointer;
                 text-decoration: none;
+            }
+
+            .modal-container {
+                height: 273px;
+                width: 611px;
+                background: white;
+                border-radius: 20px;
+
             }
         }
     }
