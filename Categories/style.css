@@ -158,15 +158,60 @@
   text-decoration: none;
 }
 
-button {
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 551px;
+  width: 50%;
+  margin: 0 auto;
+}
+.main .container {
+  margin-top: 140px;
+  gap: 10px;
+  margin: 140px 156px 312px 156px;
+}
+.main .container .Search {
+  display: flex;
+  width: 550PX;
+  height: 46PX;
+  flex-direction: row;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #AAAAAA;
+  padding: 15px;
+  border: none;
+}
+.main .container h1 {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 68px;
+  color: #FFFFFF;
+  width: 55vw;
+}
+.main .container .Categories_List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .container .Categories_List .alinhar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.main .container .Categories_List button {
   border-radius: 100px;
   cursor: pointer;
   width: 264px;
-  padding: 12px;
-  text-align: center;
-  padding: 12px 16px;
-  gap: 10px;
-  margin: 10px;
+  height: 40px;
   border: 3px solid #E3E3E3;
   border-radius: 100px;
   font-family: "Rubik";
@@ -176,8 +221,9 @@ button {
   line-height: 19px;
   text-align: center;
   color: #E3E3E3;
+  margin: 10px;
 }
-button .SecondaryButton:hover {
+.main .container .Categories_List button .SecondaryButton:hover {
   opacity: 0.5;
 }
 
