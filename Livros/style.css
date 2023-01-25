@@ -171,10 +171,35 @@ body {
   gap: 10px;
   width: 18vw;
 }
+.container .Library_pagination {
+  align-items: center;
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.container .Library_pagination .Library_pagination:hover {
+  background-color: #FF4E16;
+}
+.container .highlighted {
+  background: var(--orange);
+  border-radius: 100px;
+}
+.container h1 {
+  width: 74vw !important;
+}
 .container .Library_books-list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  margin-top: 80px;
+}
+@media screen and (min-width: 700px) {
+  .container .Library_books-list .Library_books-list {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .Library_books-list img {
   height: 381px;
@@ -183,19 +208,7 @@ body {
   top: 374px;
   border-radius: 0px;
 }
-.container .Library_books-list .Library_new-book {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.container .Library_books-list .Library_new-book p {
-  color: white;
-}
-.container .Library_books-list .Library_new-book img {
-  border: 3px solid white;
-}
-.container .Library_books-list .Library_new-book img .author {
+.container .Library_books-list .author {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -203,7 +216,7 @@ body {
   line-height: 17px;
   color: #FFFFFF;
 }
-.container .Library_books-list .Library_new-book img .title {
+.container .Library_books-list .title {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -211,13 +224,25 @@ body {
   line-height: 19px;
   color: #FFFFFF;
 }
-.container .Library_books-list .Library_new-book img .price {
+.container .Library_books-list .price {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #FF4E16;
+}
+.container .Library_books-list .Library_new-book {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .Library_books-list .Library_new-book .addBook {
+  color: white;
+}
+.container .Library_books-list .Library_new-book img {
+  border: 3px solid white;
 }
 .container .Library_books-list .Library_book {
   cursor: pointer;
