@@ -171,6 +171,60 @@ body {
   gap: 10px;
   width: 18vw;
 }
+.container .Library_books-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.container .Library_books-list img {
+  height: 381px;
+  width: 264px;
+  left: 444px;
+  top: 374px;
+  border-radius: 0px;
+}
+.container .Library_books-list .Library_new-book {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .Library_books-list .Library_new-book p {
+  color: white;
+}
+.container .Library_books-list .Library_new-book img {
+  border: 3px solid white;
+}
+.container .Library_books-list .Library_new-book img .author {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.container .Library_books-list .Library_new-book img .title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.container .Library_books-list .Library_new-book img .price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF4E16;
+}
+.container .Library_books-list .Library_book {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .container .Search {
   display: flex;
   width: 550PX;
@@ -196,36 +250,6 @@ body {
   line-height: 68px;
   color: #FFFFFF;
   width: 55vw;
-}
-.container .Categories_List {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container .Categories_List .alinhar {
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-}
-.container .Categories_List button {
-  border-radius: 100px;
-  cursor: pointer;
-  width: 264px;
-  height: 40px;
-  border: 3px solid #E3E3E3;
-  border-radius: 100px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #E3E3E3;
-  margin: 10px;
-  background-color: #252525;
-}
-.container .Categories_List button .SecondaryButton:hover {
-  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
