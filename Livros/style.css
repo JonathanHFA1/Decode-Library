@@ -1,0 +1,231 @@
+* {
+  font-family: "Rokkitt", serif;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252525 !important;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+.container .container2 {
+  display: flex;
+  gap: 145px;
+  padding: 153px;
+  top: 243px;
+}
+.container .container2 input {
+  background-color: #FFFFFF;
+}
+.container .container2 .login1Left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 551px;
+  width: 50%;
+}
+.container .container2 .login1Left p {
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #E3E3E3;
+}
+.container .container2 .login1Left h6 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #E3E3E3;
+}
+.container .container2 .login1Left h1 {
+  font-family: Rokkitt;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.container .container2 .login2Right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.container .container2 .login2Right .newsLetter {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  color: #FFFFFF;
+}
+.container .container2 .login2Right .newsLetter p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #E3E3E3;
+}
+.container .container2 .login2Right .newsLetter input {
+  height: 20px;
+  width: 20px;
+  accent-color: #FF4E16;
+}
+.container .container2 .login2Right .text, .container .container2 .login2Right .register {
+  width: 360px;
+  height: 46px;
+  border-radius: 100px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.container .container2 .login2Right .text::placeholder, .container .container2 .login2Right .register::placeholder {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #AAAAAA;
+  padding: 24px;
+}
+.container .container2 .login2Right .registrar {
+  margin-left: 100px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container .container2 .login2Right a {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.container .container2 .login2Right .register {
+  background-color: #FF4E16;
+  color: white;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.container .container2 .login2Right h2 {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+.container .container2 .login2Right .socialMedia {
+  display: flex;
+  gap: 18px;
+  color: #FFFFFF;
+}
+.container .container2 .login2Right .socialMedia button {
+  border-radius: 100px;
+  width: 105px;
+  height: 43px;
+  display: inline;
+  background: white;
+  cursor: pointer;
+}
+.container .container2 .login2Right .socialMedia img {
+  background-color: white;
+}
+.container .container2 .login2Right hr {
+  border-color: #aaa;
+  box-sizing: border-box;
+  width: 70%;
+  margin-right: 8px;
+  display: flex;
+  align-self: center;
+}
+.container .container2 .login2Right .contaLogin {
+  border: solid 3px white;
+  color: white;
+  border-radius: 100px;
+  height: 43px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  margin-top: 140px;
+  gap: 10px;
+  width: 18vw;
+}
+.container .Search {
+  display: flex;
+  width: 550PX;
+  height: 46PX;
+  flex-direction: row;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #AAAAAA;
+  padding: 15px;
+  border: none;
+}
+.container h1 {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 68px;
+  color: #FFFFFF;
+  width: 55vw;
+}
+.container .Categories_List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .Categories_List .alinhar {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.container .Categories_List button {
+  border-radius: 100px;
+  cursor: pointer;
+  width: 264px;
+  height: 40px;
+  border: 3px solid #E3E3E3;
+  border-radius: 100px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E3E3E3;
+  margin: 10px;
+  background-color: #252525;
+}
+.container .Categories_List button .SecondaryButton:hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */
