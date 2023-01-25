@@ -4,7 +4,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #252525;
+}
+
+body {
+  background-color: #252525 !important;
 }
 
 .container {
@@ -97,6 +100,11 @@
   color: #AAAAAA;
   padding: 24px;
 }
+.container .container2 .login2Right .registrar {
+  margin-left: 100px;
+  text-decoration: none;
+  cursor: pointer;
+}
 .container .container2 .login2Right a {
   font-family: "Rubik";
   font-style: normal;
@@ -158,20 +166,12 @@
   text-decoration: none;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 551px;
-  width: 50%;
-  margin: 0 auto;
-}
-.main .container {
+.container {
   margin-top: 140px;
   gap: 10px;
-  margin: 140px 156px 312px 156px;
+  width: 18vw;
 }
-.main .container .Search {
+.container .Search {
   display: flex;
   width: 550PX;
   height: 46PX;
@@ -188,7 +188,7 @@
   padding: 15px;
   border: none;
 }
-.main .container h1 {
+.container h1 {
   font-family: "Rokkitt";
   font-style: normal;
   font-weight: 500;
@@ -197,17 +197,17 @@
   color: #FFFFFF;
   width: 55vw;
 }
-.main .container .Categories_List {
+.container .Categories_List {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main .container .Categories_List .alinhar {
+.container .Categories_List .alinhar {
   display: flex;
   flex-direction: row;
   margin: 10px;
 }
-.main .container .Categories_List button {
+.container .Categories_List button {
   border-radius: 100px;
   cursor: pointer;
   width: 264px;
@@ -222,8 +222,9 @@
   text-align: center;
   color: #E3E3E3;
   margin: 10px;
+  background-color: #252525;
 }
-.main .container .Categories_List button .SecondaryButton:hover {
+.container .Categories_List button .SecondaryButton:hover {
   opacity: 0.5;
 }
 

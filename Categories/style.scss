@@ -1,19 +1,12 @@
 @import '../color.scss';
 @import '../register/styleR.scss';
 
-.main {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 551px;
-    width: 50%;
-    margin: 0 auto;
+
 
     .container {
         margin-top: 140px;
         gap: 10px;
-        // width: 38vw;
-        margin: 140px 156px 312px 156px;
+        width: 18vw;
 
         .Search {
             display: flex;
@@ -70,6 +63,7 @@
                 text-align: center;
                 color: #E3E3E3;
                 margin: 10px;
+                background-color: $preto;
 
                 & .SecondaryButton:hover {
                     opacity: 0.5;
@@ -77,4 +71,3 @@
             }
         }
     }
-}
