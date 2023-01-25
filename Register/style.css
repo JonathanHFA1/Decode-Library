@@ -100,6 +100,11 @@ body {
   color: #AAAAAA;
   padding: 24px;
 }
+.container .container2 .login2Right .registrar {
+  margin-left: 100px;
+  text-decoration: none;
+  cursor: pointer;
+}
 .container .container2 .login2Right a {
   font-family: "Rubik";
   font-style: normal;
