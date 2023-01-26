@@ -1,0 +1,277 @@
+* {
+  font-family: "Rokkitt", serif;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252525 !important;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  gap: 145px;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container input {
+  background-color: #FFFFFF;
+}
+.container .login1Left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+  border: 1px solid red;
+  height: 80%;
+}
+@media only screen and (max-width: 1000px) {
+  .container .login1Left {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.container .login1Left p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #e3e3e3;
+}
+.container .login1Left h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #e3e3e3;
+}
+.container .login1Left h1 {
+  font-family: Rokkitt;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 59px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.container .login2Right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  height: 80%;
+  border: 1px solid red;
+}
+.container .login2Right .inputs {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.container .login2Right .inputs input {
+  margin: 10px 0;
+  width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  .container .login2Right {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.container .login2Right .newsLetter {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+.container .login2Right .newsLetter p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #E3E3E3;
+  margin: 0;
+}
+.container .login2Right .newsLetter input {
+  accent-color: #FF4E16;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.container .login2Right .newsLetter input::before {
+  height: auto;
+}
+.container .login2Right .text, .container .login2Right .register {
+  width: 360px;
+  height: 46px;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.container .login2Right .text::placeholder, .container .login2Right .register::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #aaaaaa;
+  padding: 24px;
+}
+.container .login2Right .registrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+}
+.container .login2Right .registrar a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.container .login2Right .register {
+  background-color: #FF4E16;
+  color: white;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.container .login2Right h2 {
+  width: 100%;
+  justify-self: flex-start;
+  font-weight: 500;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.container .login2Right .socialMedia {
+  display: flex;
+  gap: 18px;
+  color: #FFFFFF;
+}
+.container .login2Right .socialMedia button {
+  border-radius: 100px;
+  width: 105px;
+  height: 43px;
+  display: inline;
+  background: white;
+  cursor: pointer;
+}
+.container .login2Right .socialMedia img {
+  background-color: white;
+}
+.container .login2Right .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .login2Right .line hr {
+  border: 1px solid gray;
+  width: 80%;
+}
+.container .login2Right .contaLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px white;
+  color: white;
+  border-radius: 100px;
+  height: 43px;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Container .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 58%;
+}
+@media only screen and (max-width: 700px) {
+  .Container .top .top {
+    width: 100%;
+  }
+  .Container .top .top h1 {
+    font-size: 30px;
+  }
+  .Container .top .top .Search {
+    width: 200px !important;
+    background-color: red;
+  }
+}
+.Container .top .Search {
+  height: 46px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #aaaaaa;
+  padding: 15px;
+  border: none;
+}
+.Container .top h1 {
+  font-weight: 500;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+.Container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Container .btn .alinhar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.Container .btn .alinhar button {
+  border-radius: 100px;
+  cursor: pointer;
+  width: 264px;
+  height: 40px;
+  border: 3px solid #e3e3e3;
+  border-radius: 100px;
+  font-size: 16px;
+  text-align: center;
+  color: #e3e3e3;
+  margin: 10px;
+  background-color: #252525;
+}
+@media only screen and (max-width: 700px) {
+  .Container .btn .alinhar button button {
+    width: 164px;
+    background-color: pink;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

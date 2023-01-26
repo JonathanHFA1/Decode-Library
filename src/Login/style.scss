@@ -1,0 +1,18 @@
+@import "../color.scss";
+@import "../register/styleR.scss";
+
+.containerp {
+  @extend .container;
+
+  .login1Leftp {
+    @extend .login1Left;
+    @media only screen and (max-width: 1100px) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .login2Rightp {
+    @extend .login2Right;
+  }
+}
