@@ -201,6 +201,15 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 700px) {
+  .Container .top {
+    width: 100vw !important;
+  }
+  .Container button {
+    width: 168px !important;
+    font-size: 12px !important;
+  }
+}
 .Container .top {
   display: flex;
   flex-direction: column;
@@ -239,6 +248,7 @@ body {
   justify-content: center;
   align-items: center;
   align-self: flex-start;
+  padding: 15px;
 }
 .Container .btn {
   display: flex;
@@ -266,12 +276,6 @@ body {
   color: #e3e3e3;
   margin: 10px;
   background-color: #252525;
-}
-@media only screen and (max-width: 700px) {
-  .Container .btn .alinhar button button {
-    width: 164px;
-    background-color: pink;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

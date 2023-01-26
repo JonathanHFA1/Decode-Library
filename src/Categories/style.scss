@@ -7,6 +7,15 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  @media only screen and (max-width: 700px) {
+    .top {
+      width: 100vw !important;
+    }
+    button {
+      width: 168px !important;
+      font-size: 12px !important;
+    }
+  }
 
   .top {
     display: flex;
@@ -47,6 +56,7 @@
       justify-content: center;
       align-items: center;
       align-self: flex-start;
+      padding: 15px;
     }
   }
   .btn {
@@ -75,12 +85,6 @@
         color: #e3e3e3;
         margin: 10px;
         background-color: $preto;
-        @media only screen and (max-width: 700px) {
-          button {
-            width: 164px;
-            background-color: pink;
-          }
-        }
       }
     }
   }
