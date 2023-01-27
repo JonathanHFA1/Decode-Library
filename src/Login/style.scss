@@ -1,18 +1,218 @@
 @import "../color.scss";
-@import "../register/styleR.scss";
 
-.containerp {
-  @extend .container;
+* {
+  font-family: "Rokkitt", serif;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .login1Leftp {
-    @extend .login1Left;
-    @media only screen and (max-width: 1100px) {
-      width: 100%;
-      padding: 10px;
+body {
+  background-color: $preto !important   ;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  input {
+    background-color: $white;
+  }
+
+  display: flex;
+  gap: 145px;
+
+  .login1Left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    border: 1px solid red;
+    height: 80%;
+
+    @media only screen and (max-width: 1000px) {
+      display: none;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #e3e3e3;
+    }
+
+    h6 {
+      font-weight: 700;
+      font-size: 14px;
+      color: #e3e3e3;
+    }
+
+    h1 {
+      font-family: Rokkitt;
+      font-size: 52px;
+      font-weight: 500;
+      line-height: 59px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-transform: uppercase;
+      color: $white;
     }
   }
 
-  .login2Rightp {
-    @extend .login2Right;
+  .login2Right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; //espacemento entra as coluna/grades
+    width: 50%;
+    height: 80%;
+    border: 1px solid red;
+
+    .inputs {
+      width: 100%;
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      input {
+        margin: 10px 0;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      margin-top: 50px;
+      width: 85%;
+      padding: 10px;
+      .register{
+        width: 50% !important;
+        padding: 10px;
+      }
+    }
+
+    .newsLetter {
+      border: 1px solid red;
+      display: flex;
+      align-items: center;
+
+      color: $white;
+      width: 100%;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        color: $gray;
+        margin: 0;
+      }
+
+      input {
+        accent-color: $orange;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+      }
+      & input::before {
+        height: auto;
+      }
+    }
+
+    .text {
+      width: 360px;
+      height: 46px;
+      border-radius: 100px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #aaaaaa;
+        padding: 24px;
+      }
+    }
+    .registrar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+      width: 100%;
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        color: $white;
+      }
+    }
+
+    .register {
+      @extend .text;
+      background-color: $orange;
+      color: white;
+      border: none;
+      font-size: 16px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    h2 {
+      width: 100%;
+      justify-self: flex-start;
+      font-weight: 500;
+      font-size: 40px;
+      color: $white;
+    }
+
+    .socialMedia {
+      display: flex;
+      gap: 18px;
+      color: $white;
+
+      button {
+        border-radius: 100px;
+        width: 105px;
+        height: 43px;
+        display: inline;
+        background: white;
+        cursor: pointer;
+      }
+
+      img {
+        background-color: white;
+      }
+    }
+
+    .line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      hr {
+        border: 1px solid gray;
+        width: 80%;
+      }
+    }
+
+    .contaLogin {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid 3px white;
+      color: white;
+      border-radius: 100px;
+      height: 43px;
+      width: 100%;
+      text-decoration: none;
+      padding: 10px;
+    }
   }
 }

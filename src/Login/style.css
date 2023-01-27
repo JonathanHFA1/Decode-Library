@@ -10,7 +10,7 @@ body {
   background-color: #252525 !important;
 }
 
-.container, .containerp {
+.container {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -20,14 +20,14 @@ body {
   gap: 145px;
 }
 @media only screen and (max-width: 1000px) {
-  .container, .containerp {
+  .container {
     flex-direction: column;
   }
 }
-.container input, .containerp input {
+.container input {
   background-color: #FFFFFF;
 }
-.container .login1Left, .container .containerp .login1Leftp, .containerp .container .login1Leftp, .containerp .login1Left, .containerp .login1Leftp {
+.container .login1Left {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -36,23 +36,22 @@ body {
   height: 80%;
 }
 @media only screen and (max-width: 1000px) {
-  .container .login1Left, .container .containerp .login1Leftp, .containerp .container .login1Leftp, .containerp .login1Left, .containerp .login1Leftp {
-    width: 100%;
-    padding: 10px;
+  .container .login1Left {
+    display: none;
   }
 }
-.container .login1Left p, .container .containerp .login1Leftp p, .containerp .container .login1Leftp p, .containerp .login1Left p, .containerp .login1Leftp p {
+.container .login1Left p {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #e3e3e3;
 }
-.container .login1Left h6, .container .containerp .login1Leftp h6, .containerp .container .login1Leftp h6, .containerp .login1Left h6, .containerp .login1Leftp h6 {
+.container .login1Left h6 {
   font-weight: 700;
   font-size: 14px;
   color: #e3e3e3;
 }
-.container .login1Left h1, .container .containerp .login1Leftp h1, .containerp .container .login1Leftp h1, .containerp .login1Left h1, .containerp .login1Leftp h1 {
+.container .login1Left h1 {
   font-family: Rokkitt;
   font-size: 52px;
   font-weight: 500;
@@ -62,7 +61,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.container .login2Right, .container .containerp .login2Rightp, .containerp .container .login2Rightp, .containerp .login2Right, .containerp .login2Rightp {
+.container .login2Right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,45 +71,50 @@ body {
   height: 80%;
   border: 1px solid red;
 }
-.container .login2Right .inputs, .containerp .login2Right .inputs, .containerp .login2Rightp .inputs {
+.container .login2Right .inputs {
   width: 100%;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
-.container .login2Right .inputs input, .containerp .login2Right .inputs input, .containerp .login2Rightp .inputs input {
+.container .login2Right .inputs input {
   margin: 10px 0;
   width: 100%;
 }
 @media only screen and (max-width: 1000px) {
-  .container .login2Right, .container .containerp .login2Rightp, .containerp .container .login2Rightp, .containerp .login2Right, .containerp .login2Rightp {
-    width: 100%;
+  .container .login2Right {
+    margin-top: 50px;
+    width: 85%;
+    padding: 10px;
+  }
+  .container .login2Right .register {
+    width: 50% !important;
     padding: 10px;
   }
 }
-.container .login2Right .newsLetter, .containerp .login2Right .newsLetter, .containerp .login2Rightp .newsLetter {
+.container .login2Right .newsLetter {
   border: 1px solid red;
   display: flex;
   align-items: center;
   color: #FFFFFF;
   width: 100%;
 }
-.container .login2Right .newsLetter p, .containerp .login2Right .newsLetter p, .containerp .login2Rightp .newsLetter p {
+.container .login2Right .newsLetter p {
   font-weight: 500;
   font-size: 14px;
   color: #E3E3E3;
   margin: 0;
 }
-.container .login2Right .newsLetter input, .containerp .login2Right .newsLetter input, .containerp .login2Rightp .newsLetter input {
+.container .login2Right .newsLetter input {
   accent-color: #FF4E16;
   margin-right: 10px;
   width: 20px;
   height: 20px;
 }
-.container .login2Right .newsLetter input::before, .containerp .login2Right .newsLetter input::before, .containerp .login2Rightp .newsLetter input::before {
+.container .login2Right .newsLetter input::before {
   height: auto;
 }
-.container .login2Right .text, .containerp .login2Right .text, .containerp .login2Rightp .text, .container .login2Right .register, .containerp .login2Right .register, .containerp .login2Rightp .register {
+.container .login2Right .text, .container .login2Right .register {
   width: 360px;
   height: 46px;
   border-radius: 100px;
@@ -118,14 +122,14 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
-.container .login2Right .text::placeholder, .containerp .login2Right .text::placeholder, .containerp .login2Rightp .text::placeholder, .container .login2Right .register::placeholder, .containerp .login2Right .register::placeholder, .containerp .login2Rightp .register::placeholder {
+.container .login2Right .text::placeholder, .container .login2Right .register::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #aaaaaa;
   padding: 24px;
 }
-.container .login2Right .registrar, .containerp .login2Right .registrar, .containerp .login2Rightp .registrar {
+.container .login2Right .registrar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,34 +137,32 @@ body {
   cursor: pointer;
   width: 100%;
 }
-.container .login2Right .registrar a, .containerp .login2Right .registrar a, .containerp .login2Rightp .registrar a {
+.container .login2Right .registrar a {
   font-weight: 500;
   font-size: 14px;
   color: #FFFFFF;
 }
-.container .login2Right .register, .containerp .login2Right .register, .containerp .login2Rightp .register {
+.container .login2Right .register {
   background-color: #FF4E16;
   color: white;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
+  border: none;
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
 }
-.container .login2Right h2, .container .containerp .login2Rightp h2, .containerp .container .login2Rightp h2, .containerp .login2Right h2, .containerp .login2Rightp h2 {
+.container .login2Right h2 {
   width: 100%;
   justify-self: flex-start;
   font-weight: 500;
   font-size: 40px;
   color: #FFFFFF;
 }
-.container .login2Right .socialMedia, .containerp .login2Right .socialMedia, .containerp .login2Rightp .socialMedia {
+.container .login2Right .socialMedia {
   display: flex;
   gap: 18px;
   color: #FFFFFF;
 }
-.container .login2Right .socialMedia button, .containerp .login2Right .socialMedia button, .containerp .login2Rightp .socialMedia button {
+.container .login2Right .socialMedia button {
   border-radius: 100px;
   width: 105px;
   height: 43px;
@@ -168,20 +170,20 @@ body {
   background: white;
   cursor: pointer;
 }
-.container .login2Right .socialMedia img, .containerp .login2Right .socialMedia img, .containerp .login2Rightp .socialMedia img {
+.container .login2Right .socialMedia img {
   background-color: white;
 }
-.container .login2Right .line, .containerp .login2Right .line, .containerp .login2Rightp .line {
+.container .login2Right .line {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.container .login2Right .line hr, .containerp .login2Right .line hr, .containerp .login2Rightp .line hr {
+.container .login2Right .line hr {
   border: 1px solid gray;
   width: 80%;
 }
-.container .login2Right .contaLogin, .containerp .login2Right .contaLogin, .containerp .login2Rightp .contaLogin {
+.container .login2Right .contaLogin {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,13 +194,6 @@ body {
   width: 100%;
   text-decoration: none;
   padding: 10px;
-}
-
-@media only screen and (max-width: 1100px) {
-  .containerp .login1Leftp {
-    width: 100%;
-    padding: 10px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
