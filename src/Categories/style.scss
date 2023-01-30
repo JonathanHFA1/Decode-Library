@@ -7,13 +7,39 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+
+  .dropdown {
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: url(Vector.jpg) no-repeat center right #FFF;
+      border: 1px solid #333;
+      font-size: 15px;
+      padding-right: 20px;
+      img{
+        padding: 10px;
+      }
+  }  }
   @media only screen and (max-width: 700px) {
+    .dropdown {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 100%;
+      margin-top: 23px;
+      select {
+        width: 343px;
+        height: 46px;
+        border-radius: 100px;
+        padding: 10px;
+      }
+    }
     .top {
       width: 100vw !important;
     }
     button {
-      width: 168px !important;
-      font-size: 12px !important;
+      display: none;
     }
   }
 
@@ -30,21 +56,17 @@
           font-size: 30px;
         }
         .Search {
-          width: 200px !important;
           background-color: red;
         }
       }
     }
 
     .Search {
+      width: 343px;
       height: 46px;
       background: rgba(255, 255, 255, 0.25);
       border-radius: 100px;
-      font-family: "Rubik";
-      font-style: normal;
-      font-weight: 400;
       font-size: 20px;
-      line-height: 24px;
       color: #aaaaaa;
       padding: 15px;
       border: none;

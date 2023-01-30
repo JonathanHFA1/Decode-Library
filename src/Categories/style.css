@@ -37,8 +37,7 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .container .login1Left {
-    width: 100%;
-    padding: 10px;
+    display: none;
   }
 }
 .container .login1Left p {
@@ -84,7 +83,12 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .container .login2Right {
-    width: 100%;
+    margin-top: 50px;
+    width: 85%;
+    padding: 10px;
+  }
+  .container .login2Right .register {
+    width: 50% !important;
     padding: 10px;
   }
 }
@@ -141,9 +145,7 @@ body {
 .container .login2Right .register {
   background-color: #FF4E16;
   color: white;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 500;
+  border: none;
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
@@ -201,13 +203,37 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.Container .dropdown select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(Vector.jpg) no-repeat center right #FFF;
+  border: 1px solid #333;
+  font-size: 15px;
+  padding-right: 20px;
+}
+.Container .dropdown select img {
+  padding: 10px;
+}
 @media only screen and (max-width: 700px) {
+  .Container .dropdown {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    margin-top: 23px;
+  }
+  .Container .dropdown select {
+    width: 343px;
+    height: 46px;
+    border-radius: 100px;
+    padding: 10px;
+  }
   .Container .top {
     width: 100vw !important;
   }
   .Container button {
-    width: 168px !important;
-    font-size: 12px !important;
+    display: none;
   }
 }
 .Container .top {
@@ -225,19 +251,15 @@ body {
     font-size: 30px;
   }
   .Container .top .top .Search {
-    width: 200px !important;
     background-color: red;
   }
 }
 .Container .top .Search {
+  width: 343px;
   height: 46px;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 100px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
   color: #aaaaaa;
   padding: 15px;
   border: none;
