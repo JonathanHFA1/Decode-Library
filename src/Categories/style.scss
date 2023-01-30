@@ -10,16 +10,7 @@
 
   .dropdown {
     select {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      background: url(Vector.jpg) no-repeat center right #FFF;
-      border: 1px solid #333;
-      font-size: 15px;
-      padding-right: 20px;
-      img{
-        padding: 10px;
-      }
+    display: none;
   }  }
   @media only screen and (max-width: 700px) {
     .dropdown {
@@ -29,10 +20,18 @@
       width: 100%;
       margin-top: 23px;
       select {
+        display: flex;
         width: 343px;
         height: 46px;
         border-radius: 100px;
         padding: 10px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url(Vector.jpg) no-repeat center right #FFF;
+        border: 1px solid #333;
+        font-size: 15px;
+        padding-right: 20px;
       }
     }
     .top {

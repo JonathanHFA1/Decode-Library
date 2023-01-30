@@ -204,16 +204,7 @@ body {
   flex-wrap: wrap;
 }
 .Container .dropdown select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url(Vector.jpg) no-repeat center right #FFF;
-  border: 1px solid #333;
-  font-size: 15px;
-  padding-right: 20px;
-}
-.Container .dropdown select img {
-  padding: 10px;
+  display: none;
 }
 @media only screen and (max-width: 700px) {
   .Container .dropdown {
@@ -224,10 +215,18 @@ body {
     margin-top: 23px;
   }
   .Container .dropdown select {
+    display: flex;
     width: 343px;
     height: 46px;
     border-radius: 100px;
     padding: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(Vector.jpg) no-repeat center right #FFF;
+    border: 1px solid #333;
+    font-size: 15px;
+    padding-right: 20px;
   }
   .Container .top {
     width: 100vw !important;
