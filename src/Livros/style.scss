@@ -9,6 +9,35 @@ body {
     height: 100vh;
     width: 100vw;
     border: 1px solid red;
+    .newBookButton {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-top: 40px;
+      @media only screen and (min-width: 800px) {
+        display: none;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .contaLogin {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          border: solid 3px white;
+          background-color: $preto;
+          color: white;
+          border-radius: 100px;
+          height: 43px;
+          width: 300px;
+          text-decoration: none;
+          padding: 10px;
+          img {
+            width: 10%;
+            background: white;
+          }
+        }
+      }
+    }
 
     h1 {
       font-weight: 500;
@@ -63,16 +92,18 @@ body {
 
       .Library_new-book {
         @extend .Library_book;
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
           display: none !important;
         }
-        
 
         .addBook {
           color: white;
         }
 
-        img {
+        .img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border: 3px solid white;
         }
       }
@@ -84,7 +115,7 @@ body {
         flex-direction: column;
         gap: 15px;
         margin: 15px;
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 800px) {
           .h1 {
             font-size: 277px;
           }
@@ -115,7 +146,7 @@ body {
           font-size: 30px;
         }
       }
-      @media only screen and (max-width: 550px) {
+      @media only screen and (max-width: 750px) {
         img {
           border: 1px solid red;
           height: 100px;

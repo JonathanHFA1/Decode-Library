@@ -205,6 +205,36 @@ body .Container {
   width: 100vw;
   border: 1px solid red;
 }
+body .Container .newBookButton {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 800px) {
+  body .Container .newBookButton {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body .Container .newBookButton .contaLogin {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px white;
+    background-color: #252525;
+    color: white;
+    border-radius: 100px;
+    height: 43px;
+    width: 300px;
+    text-decoration: none;
+    padding: 10px;
+  }
+  body .Container .newBookButton .contaLogin img {
+    width: 10%;
+    background: white;
+  }
+}
 body .Container h1 {
   font-weight: 500;
   font-size: 60px;
@@ -249,7 +279,7 @@ body .Container .Library_books-list .price {
   line-height: 24px;
   color: #ff4e16;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   body .Container .Library_books-list .Library_new-book {
     display: none !important;
   }
@@ -257,7 +287,10 @@ body .Container .Library_books-list .price {
 body .Container .Library_books-list .Library_new-book .addBook {
   color: white;
 }
-body .Container .Library_books-list .Library_new-book img {
+body .Container .Library_books-list .Library_new-book .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid white;
 }
 body .Container .Library_books-list .Library_book, body .Container .Library_books-list .Library_new-book {
@@ -268,7 +301,7 @@ body .Container .Library_books-list .Library_book, body .Container .Library_book
   gap: 15px;
   margin: 15px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   body .Container .Library_books-list .Library_book .h1, body .Container .Library_books-list .Library_new-book .h1 {
     font-size: 277px;
   }
@@ -297,7 +330,7 @@ body .Container .top h1 {
     font-size: 30px;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
   body .Container .top img {
     border: 1px solid red;
     height: 100px;
