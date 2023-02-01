@@ -450,6 +450,7 @@ body .modalContainer .modal input {
 }
 body .modalContainer .modal h1 {
   font-size: 28px;
+  align-self: baseline;
 }
 body .modalContainer .modal p {
   font-size: 20px;
