@@ -28,7 +28,7 @@ body nav .button {
 }
 @media (min-width: 700px) {
   body nav .button {
-    display: none;
+    display: none !important;
   }
 }
 body nav .button:hover {
