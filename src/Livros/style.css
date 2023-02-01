@@ -295,12 +295,8 @@ body nav li :hover {
   flex-direction: column;
 }
 .container .login2Right .inputs input {
-  width: 360px;
-  height: 46px;
-  border-radius: 100px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  margin: 10px 0;
+  width: 100%;
 }
 @media only screen and (max-width: 1000px) {
   .container .login2Right {
@@ -421,12 +417,7 @@ body {
   font-family: "Rubik";
   font-style: normal;
 }
-body .Container {
-  height: 100vh;
-  width: 100vw;
-  border: 1px solid red;
-}
-body .Container .modalContainer {
+body .modalContainer {
   align-items: center;
   background: rgba(0, 0, 0, 0.75);
   display: none;
@@ -436,7 +427,7 @@ body .Container .modalContainer {
   position: fixed;
   width: 100%;
 }
-body .Container .modalContainer .modal {
+body .modalContainer .modal {
   background: #252525;
   border-radius: 20px;
   display: flex;
@@ -448,25 +439,26 @@ body .Container .modalContainer .modal {
   padding: 50px;
   color: #fff;
 }
-body .Container .modalContainer .modal input {
-  width: 360px;
+body .modalContainer .modal input {
+  width: 100%;
   height: 46px;
   border-radius: 100px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  padding: 10px;
 }
-body .Container .modalContainer .modal h1 {
+body .modalContainer .modal h1 {
   font-size: 28px;
 }
-body .Container .modalContainer .modal p {
+body .modalContainer .modal p {
   font-size: 20px;
 }
-body .Container .modalContainer .modal .ContainerBtnVoltar {
+body .modalContainer .modal .ContainerBtnVoltar {
   display: flex;
   justify-content: center;
 }
-body .Container .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
+body .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
   all: unset;
   background: orangered;
   border-radius: 100px;
@@ -475,6 +467,11 @@ body .Container .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
   min-width: 168px;
   padding: 14px;
   text-align: center;
+}
+body .Container {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
 }
 body .Container nav {
   background-color: rgb(65, 65, 65);
