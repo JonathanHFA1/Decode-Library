@@ -9,8 +9,93 @@
 body {
   background-color: #252525 !important;
 }
-
-.container {
+body nav {
+  background-color: rgb(65, 65, 65);
+  color: rgb(165, 165, 165);
+  padding: 0 15px;
+  height: 75px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body nav .button {
+  height: 25px;
+  width: 25px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  body nav .button {
+    display: none !important;
+  }
+}
+body nav .button:hover {
+  background-color: rgb(0, 0, 0);
+}
+body nav .button li {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(156, 156, 156) !important;
+  border-radius: 4px;
+  transition: 0.3;
+}
+body nav .menu {
+  background: #ddd;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: right;
+  flex-direction: column;
+  display: none;
+  margin-right: 200px;
+  justify-content: space-between;
+  width: 40%;
+}
+@media (max-width: 700px) {
+  body nav .menu {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 700px) {
+  body nav .menu {
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    padding: 0;
+    background: none;
+    justify-content: space-between;
+  }
+  body nav .menu li:not(:nth-last-child(1)) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+body nav .menu li:not(:nth-last-child(1)) {
+  margin-bottom: 15px;
+}
+body nav li {
+  list-style: none;
+}
+body nav li:hover {
+  transition: 0.5;
+}
+body nav li a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+body nav li :hover {
+  text-decoration: underline;
+}
+body .container {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -20,14 +105,14 @@ body {
   gap: 145px;
 }
 @media only screen and (max-width: 1000px) {
-  .container {
+  body .container {
     flex-direction: column;
   }
 }
-.container input {
+body .container input {
   background-color: #FFFFFF;
 }
-.container .login1Left {
+body .container .login1Left {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -36,22 +121,22 @@ body {
   height: 80%;
 }
 @media only screen and (max-width: 1000px) {
-  .container .login1Left {
+  body .container .login1Left {
     display: none;
   }
 }
-.container .login1Left p {
+body .container .login1Left p {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #e3e3e3;
 }
-.container .login1Left h6 {
+body .container .login1Left h6 {
   font-weight: 700;
   font-size: 14px;
   color: #e3e3e3;
 }
-.container .login1Left h1 {
+body .container .login1Left h1 {
   font-family: Rokkitt;
   font-size: 52px;
   font-weight: 500;
@@ -61,7 +146,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.container .login2Right {
+body .container .login2Right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,50 +156,50 @@ body {
   height: 80%;
   border: 1px solid red;
 }
-.container .login2Right .inputs {
+body .container .login2Right .inputs {
   width: 100%;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
-.container .login2Right .inputs input {
+body .container .login2Right .inputs input {
   margin: 10px 0;
   width: 100%;
 }
 @media only screen and (max-width: 1000px) {
-  .container .login2Right {
+  body .container .login2Right {
     margin-top: 50px;
     width: 85%;
     padding: 10px;
   }
-  .container .login2Right .register {
+  body .container .login2Right .register {
     width: 50% !important;
     padding: 10px;
   }
 }
-.container .login2Right .newsLetter {
+body .container .login2Right .newsLetter {
   border: 1px solid red;
   display: flex;
   align-items: center;
   color: #FFFFFF;
   width: 100%;
 }
-.container .login2Right .newsLetter p {
+body .container .login2Right .newsLetter p {
   font-weight: 500;
   font-size: 14px;
   color: #E3E3E3;
   margin: 0;
 }
-.container .login2Right .newsLetter input {
+body .container .login2Right .newsLetter input {
   accent-color: #FF4E16;
   margin-right: 10px;
   width: 20px;
   height: 20px;
 }
-.container .login2Right .newsLetter input::before {
+body .container .login2Right .newsLetter input::before {
   height: auto;
 }
-.container .login2Right .text, .container .login2Right .register {
+body .container .login2Right .text, body .container .login2Right .register {
   width: 360px;
   height: 46px;
   border-radius: 100px;
@@ -122,14 +207,14 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
-.container .login2Right .text::placeholder, .container .login2Right .register::placeholder {
+body .container .login2Right .text::placeholder, body .container .login2Right .register::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #aaaaaa;
   padding: 24px;
 }
-.container .login2Right .registrar {
+body .container .login2Right .registrar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,12 +222,12 @@ body {
   cursor: pointer;
   width: 100%;
 }
-.container .login2Right .registrar a {
+body .container .login2Right .registrar a {
   font-weight: 500;
   font-size: 14px;
   color: #FFFFFF;
 }
-.container .login2Right .register {
+body .container .login2Right .register {
   background-color: #FF4E16;
   color: white;
   border: none;
@@ -150,19 +235,19 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
-.container .login2Right h2 {
+body .container .login2Right h2 {
   width: 100%;
   justify-self: flex-start;
   font-weight: 500;
   font-size: 40px;
   color: #FFFFFF;
 }
-.container .login2Right .socialMedia {
+body .container .login2Right .socialMedia {
   display: flex;
   gap: 18px;
   color: #FFFFFF;
 }
-.container .login2Right .socialMedia button {
+body .container .login2Right .socialMedia button {
   border-radius: 100px;
   width: 105px;
   height: 43px;
@@ -170,20 +255,20 @@ body {
   background: white;
   cursor: pointer;
 }
-.container .login2Right .socialMedia img {
+body .container .login2Right .socialMedia img {
   background-color: white;
 }
-.container .login2Right .line {
+body .container .login2Right .line {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.container .login2Right .line hr {
+body .container .login2Right .line hr {
   border: 1px solid gray;
   width: 80%;
 }
-.container .login2Right .contaLogin {
+body .container .login2Right .contaLogin {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,6 +289,92 @@ body .Container {
   height: 100vh;
   width: 100vw;
   border: 1px solid red;
+}
+body .Container nav {
+  background-color: rgb(65, 65, 65);
+  color: rgb(165, 165, 165);
+  padding: 0 15px;
+  height: 75px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body .Container nav .button {
+  height: 25px;
+  width: 25px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  body .Container nav .button {
+    display: none !important;
+  }
+}
+body .Container nav .button:hover {
+  background-color: rgb(0, 0, 0);
+}
+body .Container nav .button li {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(156, 156, 156) !important;
+  border-radius: 4px;
+  transition: 0.3;
+}
+body .Container nav .menu {
+  background: #ddd;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  text-align: right;
+  flex-direction: column;
+  display: none;
+  margin-right: 200px;
+  justify-content: space-between;
+  width: 40%;
+}
+@media (max-width: 700px) {
+  body .Container nav .menu {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 700px) {
+  body .Container nav .menu {
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    padding: 0;
+    background: none;
+    justify-content: space-between;
+  }
+  body .Container nav .menu li:not(:nth-last-child(1)) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+body .Container nav .menu li:not(:nth-last-child(1)) {
+  margin-bottom: 15px;
+}
+body .Container nav li {
+  list-style: none;
+}
+body .Container nav li:hover {
+  transition: 0.5;
+}
+body .Container nav li a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+body .Container nav li :hover {
+  text-decoration: underline;
 }
 body .Container .newBookButton {
   display: flex;
