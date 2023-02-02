@@ -35,7 +35,14 @@ body {
           line-height: 19px;
           padding: 10px;
         }
-
+        input[type="file"]
+        {
+          display: none;
+        }
+        label{
+          color: $orange;
+          cursor: pointer;
+        }
         h1 {
           font-size: 28px;
           align-self: baseline;
