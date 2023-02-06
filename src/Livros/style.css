@@ -136,7 +136,7 @@ body .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
   text-align: center;
 }
 body nav {
-  background-color: rgb(65, 65, 65);
+  background-color: #252525 !important;
   color: rgb(165, 165, 165);
   padding: 0 15px;
   height: 75px;
@@ -144,6 +144,35 @@ body nav {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+}
+body nav img {
+  width: 70px;
+  height: 40px;
+  margin-left: 50px;
+}
+@media (max-width: 950px) {
+  body nav img {
+    margin-left: 0;
+  }
+}
+body nav .btnLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px white;
+  background-color: #252525;
+  color: white;
+  border-radius: 100px;
+  height: 43px;
+  width: 100px;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 100px;
+}
+@media (max-width: 950px) {
+  body nav .btnLogin {
+    display: none !important;
+  }
 }
 body nav .button {
   height: 25px;
@@ -153,8 +182,11 @@ body nav .button {
   justify-content: space-between;
   cursor: pointer;
 }
-@media (min-width: 700px) {
+@media (min-width: 950px) {
   body nav .button {
+    display: none !important;
+  }
+  body nav .button .btnLogin {
     display: none !important;
   }
 }
@@ -182,18 +214,18 @@ body nav .menu {
   justify-content: space-between;
   width: 40%;
 }
-@media (max-width: 700px) {
+@media (max-width: 950px) {
   body nav .menu {
     margin-right: 0 !important;
     width: 100% !important;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 950px) {
   body nav .menu {
     display: flex !important;
     flex-direction: row;
     position: relative;
-    top: 0;
+    top: 5px;
     padding: 0;
     background: none;
     justify-content: space-between;
@@ -476,7 +508,7 @@ body .Container {
   border: 1px solid red;
 }
 body .Container nav {
-  background-color: rgb(65, 65, 65);
+  background-color: #252525;
   color: rgb(165, 165, 165);
   padding: 0 15px;
   height: 75px;
@@ -507,6 +539,51 @@ body .Container nav .button li {
   background-color: rgb(156, 156, 156) !important;
   border-radius: 4px;
   transition: 0.3;
+}
+body .Container nav .button img {
+  width: 70px;
+  height: 40px;
+  margin-left: 50px;
+}
+@media (max-width: 950px) {
+  body .Container nav .button img {
+    margin-left: 0;
+  }
+}
+body .Container nav .button .btnLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px white;
+  background-color: #252525;
+  color: white;
+  border-radius: 100px;
+  height: 43px;
+  width: 100px;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 100px;
+}
+@media (max-width: 950px) {
+  body .Container nav .button .btnLogin {
+    display: none !important;
+  }
+}
+body .Container nav .button .button {
+  height: 25px;
+  width: 25px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media (min-width: 950px) {
+  body .Container nav .button .button {
+    display: none !important;
+  }
+  body .Container nav .button .button .btnLogin {
+    display: none !important;
+  }
 }
 body .Container nav .menu {
   background: #ddd;
