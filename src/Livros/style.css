@@ -461,9 +461,15 @@ body .modalContainer .modal {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  width: 300px !important;
+  min-width: 0;
+  width: 600px;
   padding: 50px;
   color: #fff;
+}
+@media (max-width: 700px) {
+  body .modalContainer .modal {
+    width: 350px !important;
+  }
 }
 body .modalContainer .modal input {
   width: 100%;
@@ -473,6 +479,13 @@ body .modalContainer .modal input {
   font-size: 16px;
   line-height: 19px;
   padding: 10px;
+}
+@media (max-width: 700px) {
+  body .modalContainer .modal input {
+    width: 80%;
+    height: 40px;
+    font-size: 13px;
+  }
 }
 body .modalContainer .modal input[type=file] {
   display: none;
@@ -484,6 +497,11 @@ body .modalContainer .modal label {
 body .modalContainer .modal h1 {
   font-size: 28px;
   align-self: baseline;
+}
+@media (max-width: 700px) {
+  body .modalContainer .modal h1 {
+    font-size: 18px;
+  }
 }
 body .modalContainer .modal p {
   font-size: 20px;
@@ -505,7 +523,6 @@ body .modalContainer .modal .ContainerBtnVoltar .BtnVoltar {
 body .Container {
   height: 100vh;
   width: 100vw;
-  border: 1px solid red;
 }
 body .Container nav {
   background-color: #252525;
