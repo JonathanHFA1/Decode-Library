@@ -461,7 +461,7 @@ body .modalContainer .modal {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  min-width: 600px;
+  width: 300px !important;
   padding: 50px;
   color: #fff;
 }
