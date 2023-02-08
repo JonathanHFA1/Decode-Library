@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body .modalContainerInscricao {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+body .modalContainerInscricao .modal {
+  margin-right: 10px;
+  background: #252525;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 600px;
+  padding: 50px;
+  color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+  body .modalContainerInscricao .modal {
+    width: 300px;
+  }
+}
+body .modalContainerInscricao .modal h1 {
+  font-size: 28px;
+}
+body .modalContainerInscricao .modal p {
+  font-size: 20px;
+}
+body .modalContainerInscricao .modal .ContainerBtnVoltar {
+  display: flex;
+  justify-content: center;
+}
+body .modalContainerInscricao .modal .ContainerBtnVoltar .BtnVoltar {
+  all: unset;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+}
+body .HomeFirstContainer {
+  background-color: #252525 !important;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+body .HomeFirstContainer .HomeFirst {
+  display: flex;
+  width: 1280px;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeFirstContainer .HomeFirst {
+    flex-direction: column;
+    width: 375px;
+  }
+  body .HomeFirstContainer .HomeFirst img {
+    display: none;
+  }
+  body .HomeFirstContainer .HomeFirst h1 {
+    font-size: 54px !important;
+    margin-top: 60px;
+  }
+}
+body .HomeFirstContainer .HomeFirst .ContainerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeFirstContainer .HomeFirst .ContainerLeft .ContainerLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .HomeFirstContainer .HomeFirst .ContainerLeft .ContainerLeft h1 {
+    width: 343px;
+  }
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft .HomeTitle {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Rokkitt", serif;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft .HomeTitle h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  font-weight: bold;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft p {
+  font-size: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+body .HomeFirstContainer .HomeFirst .ContainerLeft button {
+  all: unset;
+  background: #ff4e16;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  min-width: 168px;
+  padding: 14px;
+  text-align: center;
+  width: fit-content;
+}
+body .HomeSecondContainer {
+  align-items: center;
+  background: #e3e3e3;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeSecondContainer {
+    flex-direction: column;
+  }
+  body .HomeSecondContainer img {
+    width: 100%;
+  }
+  body .HomeSecondContainer p {
+    font-size: 16px;
+  }
+}
+body .HomeSecondContainer .HomeSecond {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 50px 40px;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeSecondContainer .HomeSecond {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
+body .HomeSecondContainer .HomeSecond .HomeSecondTitle {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+body .HomeSecondContainer .HomeBookContainer {
+  display: flex;
+  font-family: "Rokkitt", serif;
+  justify-content: space-between;
+}
+body .HomeSecondContainer .HomeBookContainer .HomeBook {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+body .HomeSecondContainer .HomeBookContainer .HomeBook .Container1 {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeSecondContainer .HomeBookContainer .HomeBook .Container1 {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+body .HomeSecondContainer .HomeBookContainer .HomeBook .Container2 {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  body .HomeSecondContainer .HomeBookContainer .HomeBook .Container2 {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+body .HomeSecondContainer .HomeBookContainer .HomeBook .HomeBookDescription {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 264px;
+}
+body .HomeSecondContainer .HomeBookContainer .HomeBook .HomeBookDescription .BookTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+body .HomeSecondContainer .HomeBookContainer .HomeBook .HomeBookDescription .BookDescription {
+  font-size: 14px;
+  font-weight: 400;
+}
+body footer {
+  display: flex;
+  font-family: "Rokkitt", serif;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #252525;
+}
+@media only screen and (max-width: 1000px) {
+  body footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+body footer .HomeFooter {
+  align-items: center;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  padding: 0px 40px;
+  width: 1280px;
+}
+@media only screen and (max-width: 1000px) {
+  body footer .HomeFooter {
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 0px;
+  }
+  body footer .HomeFooter img {
+    margin-top: 72px;
+  }
+}
+body footer .HomeFooter .FooterCotainerLeft {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+  body footer .HomeFooter .FooterCotainerLeft .Btn {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer .HomeFooter .FooterCotainerLeft .Btn button {
+    width: 326px;
+    margin-top: 24px;
+  }
+}
+body footer .HomeFooter .FooterCotainerLeft h1 {
+  size: 40px;
+  align-self: flex-start;
+}
+body footer .HomeFooter .FooterCotainerLeft p {
+  align-self: flex-start;
+}
+@media only screen and (max-width: 1000px) {
+  body footer .HomeFooter .FooterCotainerLeft .Btn {
+    width: 100% !important;
+  }
+  body footer .HomeFooter .FooterCotainerLeft .Btn .FooterEmail {
+    margin-bottom: 24px !important;
+    width: 326px !important;
+  }
+  body footer .HomeFooter .FooterCotainerLeft .Btn .FooterButton {
+    width: 326px !important;
+  }
+}
+body footer .HomeFooter .FooterCotainerLeft .Btn .FooterEmail {
+  align-self: flex-start;
+  all: unset;
+  background: white;
+  border-radius: 100px;
+  color: #000;
+  padding: 10px 10px 10px 20px;
+  width: 360px;
+}
+body footer .HomeFooter .FooterCotainerLeft .Btn .FooterButton {
+  align-self: flex-start;
+  all: unset;
+  background: orangered;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  width: 168px;
+  padding: 14px;
+  text-align: center;
+  width: fit-content;
+}
+
+/*# sourceMappingURL=Home.css.map */

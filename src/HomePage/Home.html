@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <section class="header">
+      <link href="Rubik" ,sans-serif />
+      <link rel="stylesheet" href="../Nav/Nav.css" />
+      <link rel="stylesheet" href="../HomePage/Home.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="../HomePage/submit.js" defer></script>
+    </section>
+  </head>
+
+  <body>
+    <div class="modalContainerInscricao">
+      <div class="modal">
+        <h1>Inscrição Feita</h1>
+        <p>Irá receber as nossas novidades no seu email.</p>
+        <a class="ContainerBtnVoltar">
+          <button onclick="voltar()" class="BtnVoltar">Voltar</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="HomeFirstContainer">
+      <div class="HomeFirst">
+        <div class="ContainerLeft">
+          <h1 class="HomeTitle">Bem-vindo à nossa biblioteca online</h1>
+          <p class="HomeText">
+            Descruba os romances, histórias míticas, biografias e muito mais na
+            nossa biblioteca. Requisite o seu próximo livro de uma forma fácil e
+            em poucos passos
+          </p>
+          <button class="LibraryButton">Requesite já o Livro</button>
+          <a href="/Decode-Library/Library"></a>
+        </div>
+        <div class="ContainerRight">
+          <img src="../images/book.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="HomeSecondContainer">
+      <div class="HomeSecond">
+        <div class="HomeSecondTitle">
+          <h1>Sempre com novidades</h1>
+          <p>Veja os novos livros que apareceram!</p>
+        </div>
+        <div class="HomeBookContainer">
+          <div class="HomeBook">
+            <div class="Container1">
+              <div class="HomeBookDescription">
+                <img class="BookCover" src="../images/Livro1.png" />
+                <p class="BookTitle">War & Peace</p>
+                <p class="BookDescription">Leo Tolstoy</p>
+              </div>
+              <div class="HomeBookDescription">
+                <img class="BookCover" src="../images/Livro2.png" />
+                <p class="BookTitle">War & Peace</p>
+                <p class="BookDescription">Leo Tolstoy</p>
+              </div>
+            </div>
+
+            <div class="Container2">
+              <div class="HomeBookDescription">
+                <img class="BookCover" src="../images/Livro3.png" />
+                <p class="BookTitle">War & Peace</p>
+                <p class="BookDescription">Leo Tolstoy</p>
+              </div>
+              <div class="HomeBookDescription">
+                <img class="BookCover" src="../images/Livro4.png" />
+                <p class="BookTitle">War & Peace</p>
+                <p class="BookDescription">Leo Tolstoy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="HomeFooter">
+      <div class="FooterCotainerLeft">
+        <h1>Sempre com novidades</h1>
+        <p>Veja os novos livros que apareceram!</p>
+        <div class="Btn">
+          <input
+            type="text"
+            id="email"
+            placeholder="Email"
+            class="FooterEmail"
+            value=""
+          />
+          <button
+            onclick="validate()"
+            type="submit"
+            class="FooterButton"
+            style="width: 168px"
+          >
+            Inscrever
+          </button>
+        </div>
+      </div>
+      <img src="../images/Footer.png" />
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  .modalContainerInscricao {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+
+    .modal {
+      margin-right: 10px;
+      background: #252525;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 600px;
+      padding: 50px;
+      color: #fff;
+      @media only screen and (max-width: 1000px) {
+        width: 300px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .ContainerBtnVoltar {
+        display: flex;
+        justify-content: center;
+
+        .BtnVoltar {
+          all: unset;
+          background: orangered;
+          border-radius: 100px;
+          cursor: pointer;
+          font-weight: 500;
+          min-width: 168px;
+          padding: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .HomeFirstContainer {
+    background-color: #252525 !important;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .HomeFirst {
+      @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        img {
+          display: none;
+        }
+        h1 {
+          font-size: 54px !important;
+          margin-top: 60px;
+        }
+        width: 375px;
+      }
+      display: flex;
+      width: 1280px;
+
+      .ContainerRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ContainerLeft {
+        @media only screen and (max-width: 1000px) {
+          .ContainerLeft {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1 {
+              width: 343px;
+            }
+          }
+        }
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+
+        .HomeTitle {
+          font-size: 60px;
+          font-weight: 500;
+          font-family: "Rokkitt", serif;
+
+          h1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            font-weight: bold;
+          }
+        }
+
+        p {
+          font-size: 20px;
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+        }
+
+        button {
+          all: unset;
+          background: #ff4e16;
+          border-radius: 100px;
+          cursor: pointer;
+          font-family: Rubik, sans-serif;
+          font-weight: 500;
+          min-width: 168px;
+          padding: 14px;
+          text-align: center;
+          width: fit-content;
+        }
+      }
+    }
+  }
+
+  .HomeSecondContainer {
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    align-items: center;
+    background: #e3e3e3;
+    display: flex;
+    justify-content: center;
+
+    .HomeSecond {
+      @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      padding: 50px 40px;
+
+      .HomeSecondTitle {
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+
+    .HomeBookContainer {
+      display: flex;
+      font-family: "Rokkitt", serif;
+      justify-content: space-between;
+
+      .HomeBook {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+
+        .Container1 {
+          @media only screen and (max-width: 1000px) {
+            flex-direction: column;
+            gap: 5px;
+          }
+          gap: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .Container2 {
+          @media only screen and (max-width: 1000px) {
+            flex-direction: column;
+            gap: 5px;
+          }
+          gap: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .HomeBookDescription {
+          color: #000;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          max-width: 264px;
+
+          .BookTitle {
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          .BookDescription {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    font-family: "Rokkitt", serif;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #252525;
+    @media only screen and (max-width: 1000px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .HomeFooter {
+      align-items: center;
+      display: flex;
+      gap: 60px;
+      justify-content: space-between;
+      padding: 0px 40px;
+      width: 1280px;
+      @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        padding: 50px 0px;
+        gap: 0px;
+        img {
+          margin-top: 72px;
+        }
+      }
+
+      .FooterCotainerLeft {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #fff;
+        @media only screen and (max-width: 1000px) {
+          .Btn {
+            display: flex;
+            flex-direction: column;
+            button {
+              width: 326px;
+              margin-top: 24px;
+            }
+          }
+        }
+
+        h1 {
+          size: 40px;
+          align-self: flex-start;
+        }
+        p {
+          align-self: flex-start;
+        }
+        .Btn {
+          @media only screen and (max-width: 1000px) {
+            width: 100% !important;
+            .FooterEmail {
+              margin-bottom: 24px !important;
+              width: 326px !important;
+            }
+            .FooterButton {
+              width: 326px !important;
+            }
+          }
+          .FooterEmail {
+            align-self: flex-start;
+            all: unset;
+            background: white;
+            border-radius: 100px;
+            color: #000;
+            padding: 10px 10px 10px 20px;
+            width: 360px;
+          }
+
+          .FooterButton {
+            align-self: flex-start;
+            all: unset;
+            background: orangered;
+            border-radius: 100px;
+            cursor: pointer;
+            font-family: "Rubik", sans-serif;
+            font-weight: 500;
+            width: 168px;
+            padding: 14px;
+            text-align: center;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
