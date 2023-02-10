@@ -8,6 +8,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   nav {
+    font-family: Rubik;
+    font-size: 20px;
+
     background-color: $preto;
     color: rgb(165, 165, 165);
     // vertical/horizontal
@@ -38,7 +41,7 @@
         border-radius: 4px;
         transition: 0.3;
       }
-      img{
+      img {
         width: 70px;
         height: 40px;
         margin-left: 50px;
@@ -46,7 +49,7 @@
           margin-left: 0;
         }
       }
-      .btnLogin{
+      .btnLogin {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,6 +65,7 @@
         @media (max-width: 950px) {
           display: none !important;
         }
+       
       }
       .button {
         height: 25px;
@@ -70,14 +74,17 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        a{
+          text-decoration: none;
+          color: white;
+        }
         @media (min-width: 950px) {
           display: none !important;
-          .btnLogin{
+          .btnLogin {
             display: none !important;
           }
         }
-  
-      }  
+      }
     }
 
     .menu {

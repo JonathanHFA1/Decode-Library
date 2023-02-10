@@ -447,6 +447,8 @@ body nav li :hover {
   flex-wrap: wrap;
 }
 .Container nav {
+  font-family: Rubik;
+  font-size: 20px;
   background-color: #252525;
   color: rgb(165, 165, 165);
   padding: 0 15px;
@@ -515,6 +517,10 @@ body nav li :hover {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+}
+.Container nav .button .button a {
+  text-decoration: none;
+  color: white;
 }
 @media (min-width: 950px) {
   .Container nav .button .button {
